@@ -1,46 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+# 🚀 C Compiler Design - Built From Scratch
 
-  <h1>C Compiler Design Project</h1>
+A comprehensive compiler implementation for the C programming language, designed and developed to understand the fundamental concepts of compiler construction. This project implements all major phases of compilation including lexical analysis, syntax parsing, semantic analysis, and code generation.
 
-  <p>This project is developed as part of the Compiler Design Lab course in 2021. The goal of this project is to implement a C compiler in C programming language, covering various stages of compilation such as lexical analysis, parsing, semantic analysis, and code generation.</p>
+## 📋 Overview
 
-  <h2>Getting Started</h2>
+This compiler project demonstrates the complete workflow of translating C source code into executable machine code. Built with a focus on understanding compiler theory and practical implementation, it covers:
 
-  <p>To get started with the project, follow these steps:</p>
+- **Lexical Analysis**: Tokenization of C source code
+- **Syntax Analysis**: Parse tree generation using Yacc/Bison
+- **Semantic Analysis**: Type checking and symbol table management
+- **Code Generation**: Target code generation
 
-  <ol>
-    <li>Clone the repository to your local machine:</li>
-  </ol>
-  <code>git clone https://github.com/aliebayani/C-Compiler-Design.git</code>
+## 🛠️ Technologies Used
 
-  <ol start="2">
-    <li>Navigate to the project directory:</li>
-  </ol>
-  <code>cd C-Compiler-Design</code>
+- **Flex/Lex**: For lexical analysis
+- **Yacc/Bison**: For syntax analysis and parsing
+- **C++**: Core implementation language
+- **Windows**: Development and testing environment
 
-  <ol start="3">
-    <li>Add any additional setup or installation instructions here.</li>
-  </ol>
+## 📁 Project Structure
 
-  <h2>Structure</h2>
+```
+├── Exercise 1.cpp          # Lexical analyzer exercises
+├── Exercise 2.cpp          # Parser exercises
+├── Final/
+│   ├── lexer.l            # Flex specification for tokenization
+│   ├── parser.y           # Yacc grammar rules
+│   ├── parser2.y          # Enhanced parser version
+│   ├── lex.cpp            # Generated lexical analyzer
+│   └── Other Parsers/     # Alternative parser implementations
+├── LICENSE                # Apache 2.0 License
+└── README.md             # Project documentation
+```
 
-  <ul>
-    <li><code>lexer.c</code>: Implementation of the lexical analyzer.</li>
-    <li><code>parser.c</code>: Implementation of the parser.</li>
-    <li><code>semantic.c</code>: Implementation of the semantic analyzer.</li>
-    <li><code>codegen.c</code>: Implementation of the code generator.</li>
-  </ul>
+## 🚀 Getting Started
 
-<h2>License</h2>
-<p>This project is licensed under the Apache License, Version 2.0. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+### Prerequisites
 
-<p>© 2021 Ali Bayani</p>
+- Flex (Fast Lexical Analyzer Generator)
+- Bison/Yacc (Parser Generator)
+- C++ Compiler (GCC/MSVC)
 
-</body>
-</html>
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/darkphoenix2208/C_Compiler_DESIGNING_FROM_SCRATCH.git
+   cd C_Compiler_DESIGNING_FROM_SCRATCH
+   ```
+
+2. **Compile the lexer**
+   ```bash
+   flex -o lex.cpp Final/lexer.l
+   ```
+
+3. **Compile the parser**
+   ```bash
+   bison -d Final/parser.y
+   ```
+
+4. **Build the executable**
+   ```bash
+   g++ -o compiler lex.cpp parser.tab.c -lfl
+   ```
+
+## 💡 Features
+
+- ✅ Complete lexical analysis with token recognition
+- ✅ Context-free grammar implementation
+- ✅ Symbol table management
+- ✅ Error detection and reporting
+- ✅ Multiple parser variations for experimentation
+- ✅ Modular design for easy extension
+
+## 🎯 Usage
+
+Run the compiler on a C source file:
+
+```bash
+./compiler input.c
+```
+
+The compiler will process the input file through all compilation phases and generate the corresponding output.
+
+## 📚 Learning Outcomes
+
+This project helped me understand:
+
+- How compilers translate high-level code to machine code
+- The role of formal grammars in programming languages
+- Lexical and syntactic analysis techniques
+- Symbol table design and management
+- Error handling in compilers
+
+## 🤝 Contributing
+
+Feel free to fork this project and submit pull requests for improvements or bug fixes!
+
+## 📄 License
+
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Abhishek**
+- GitHub: [@darkphoenix2208](https://github.com/darkphoenix2208)
+- Project: [C Compiler Design from Scratch](https://github.com/darkphoenix2208/C_Compiler_DESIGNING_FROM_SCRATCH)
+
+---
+
+⭐ If you find this project helpful, please give it a star!
+
+*Built with 💻 and ☕ and darkphoenix2208 | © 2026*
