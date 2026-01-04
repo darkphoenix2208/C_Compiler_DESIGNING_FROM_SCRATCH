@@ -103,7 +103,7 @@ This project is licensed under the Apache License, Version 2.0. See the [LICENSE
 
 ## 👤 Author
 
-**Abhishek**
+**Hriday Mehta**
 - GitHub: [@darkphoenix2208](https://github.com/darkphoenix2208)
 - Project: [C Compiler Design from Scratch](https://github.com/darkphoenix2208/C_Compiler_DESIGNING_FROM_SCRATCH)
 
